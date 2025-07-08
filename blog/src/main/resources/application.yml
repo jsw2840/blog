@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.oracle.jdbc.OracleDriver
+    url: jdbc:oracle://localhost:8080/blog?serverTimezone=Asia/Seoul
+    username: system
+    password: 1234
