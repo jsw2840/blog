@@ -28,22 +28,22 @@ public class HttpControllerTest {
 	}
 	
 	//인터넷브라우저요청은 무조건 get요청밖에 할 수 없다.
-	//http://localhost:8080/http/get(select)
+	//http://localhost:8000/blog/http/get(select)
 	@GetMapping("/http/get")
 	public String getTest(@RequestParam Member m) {//id=1&username=ssar&password=1234&email=ssar@nate.com//MessageConverter(스프링부트)
 		return "get요청 :" + m.getId() +","+ m.getUsername()+","+ m.getPassword()+","+m.getEmail();
 	}
-	//http://localhost:8080/http/post(insert)
+	//http://localhost:8000/blog/http/post(insert)
 	@PostMapping("/http/post")// text/plain, application/json
 	public String postTest(@RequestBody Member m) { //MessageConverter(스프링부트)
 		return "post요청 :" + m.getId() +","+ m.getUsername()+","+ m.getPassword()+","+m.getEmail();
 	}
-	//http://localhost:8080/http/put(update)
+	//http://localhost:8000/blog/http/put(update)
 	@PutMapping("/http/put")
 	public String putTest(@RequestBody Member m) {
 		return "put요청 :" + m.getId() +","+ m.getUsername()+","+ m.getPassword()+","+m.getEmail();
 	}
-	//http://localhost:8080/http/delete(delete)
+	//http://localhost:8000/blog/http/delete(delete)
 	@DeleteMapping("/http/delete")
 	public String deleteTest() {
 		return "delete요청";

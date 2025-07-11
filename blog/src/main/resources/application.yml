@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8000
   servlet:
     context-path: /blog
     encoding:
@@ -15,7 +15,7 @@ spring:
       
   datasource:
     driver-class-name: com.oracle.cj.jdbc.Driver
-    url: jdbc:oracle://localhost:8080/blog?serverTimezone=Asia/Seoul
+    url: jdbc:oracle://localhost:8000/blog?serverTimezone=Asia/Seoul
     username: system
     password: 1234
     
