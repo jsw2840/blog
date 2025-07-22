@@ -10,9 +10,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 @Entity // User 클래스가 mysql에 테이블이 생성이 된다.
+@Table(name="users")
 public class User {
 	
 	@Id
