@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cos.blog.model.RoleType;
 import com.cos.blog.model.User;
 import com.cos.blog.repository.UserRepository;
 
@@ -24,6 +25,7 @@ public class DummyContorllerTest {
 		System.out.println("email :" + user.getEmail());
 		System.out.println("createDate :" + user.getCreateDate());
 		
+		user.setRole(RoleType.USER);
 		userRepository.save(user);
 		return "회원가입 완료";
 	}
