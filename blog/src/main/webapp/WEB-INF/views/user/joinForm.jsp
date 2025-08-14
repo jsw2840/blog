@@ -2,7 +2,7 @@
 <%@ include file="../layout/header.jsp"%>
 
 <div class="container-fluid m-2">
-	<form action="/action_page.php">
+	<form id="joinForm" action="/blog/api/user" method="post">
 		<div class="mb-3 mt-3">
 			<label for="username" class="form-label">Username</label> <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
 		</div>
