@@ -15,12 +15,13 @@
 			<label for="password" class="form-label">Password</label> <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
 		</div>
 		
-		<button type="submit" class="btn btn-primary">회원가입완료</button>
+		<button id="btn-save" type="button" class="btn btn-primary">회원가입완료</button>
 	</form>
 
 </div>
 
 <%@ include file="../layout/footer.jsp"%>
+<script src="../js/user.js"></script>
 
 
 
